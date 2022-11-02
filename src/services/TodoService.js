@@ -1,16 +1,14 @@
 import axios from 'axios';
 
-export const API = 'https://ms-discord-upy5mhs63a-rj.a.run.app';
-
 class TodoService {
   constructor() {
-    API = 'https://ms-discord-upy5mhs63a-rj.a.run.app';
+    this.url = 'https://ms-discord-upy5mhs63a-rj.a.run.app';
   }
 
   async getTodos(email) {
     return new Promise((resolve, reject) => {
       axios
-        .get(`${API}/todos?email=${email}`)
+        .get(`${this.url}/todos?email=${email}`)
         .then((response) => {
           resolve(response.data);
         })
@@ -33,7 +31,7 @@ class TodoService {
     console.log(headers);
     return new Promise((resolve, reject) => {
       axios
-        .post(`${API}/todos`, todo, headers)
+        .post(`${this.url}/todos`, todo, headers)
         .then((response) => {
           resolve(response.data);
         })
@@ -47,7 +45,7 @@ class TodoService {
     const headers = this.getHeaders();
     return new Promise((resolve, reject) => {
       axios
-        .patch(`${API}/todos`, todo, headers)
+        .patch(`${this.url}/todos`, todo, headers)
         .then((response) => {
           resolve(response.data);
         })
@@ -61,7 +59,7 @@ class TodoService {
     const headers = this.getHeaders();
     return new Promise((resolve, reject) => {
       axios
-        .delete(`${API}/todos/${id}`, headers)
+        .delete(`${this.url}/todos/${id}`, headers)
         .then((response) => {
           resolve(response.data);
         })

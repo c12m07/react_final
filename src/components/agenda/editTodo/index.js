@@ -25,11 +25,11 @@ function EditTodo(params) {
           onChange={onChange}
         />
         <Button type="submit" variant="outlined">
-          Edit
+          Editar
         </Button>
       </form>
       <Button variant="outlined" onClick={params.onCancel}>
-        Cancel
+        Cancelar
       </Button>
     </>
   );

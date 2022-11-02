@@ -16,12 +16,12 @@ function TodoList(params) {
                 variant="contained"
                 onClick={() => params.onDelete(todo.id)}
               >
-                Delete
+                Eliminar
               </Button>
             </TableCell>
             <TableCell className="TableCell">
               <Button variant="contained" onClick={() => params.onEdit(todo)}>
-                Edit
+                Editar
               </Button>
             </TableCell>
           </TableRow>
