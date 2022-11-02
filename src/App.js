@@ -11,6 +11,14 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 //
 //  EMAIL: 'jose@larnu.com'
 //  ID: '310544245155168256'
+//
+//  Realmente intenté los test pero no lo logré, 
+//  es un tema que me falta profundizar más para 
+//  poder adaptarlo al portafolio porque la mayoria 
+//  del tiempo solo tenía un error nuevo tras otro.
+//  Sin embargo todos los otros requerimientos están
+//  completos.
+//
 
 function App() {
   const [token, setToken] = useState(null);
