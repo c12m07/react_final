@@ -1,0 +1,51 @@
+.LoginContainer {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.LoginContainer form {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+.LoginContainer h1 {
+  color: #387373;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 1px #2D3E40, 1px 2px 1px #2D3E40, 2px 3px 1px #2D3E40, 3px 4px 1px #2D3E40;
+  transition: all 300ms;
+}
+
+.LoginContainer h1:hover {
+  text-shadow: 0px 1px 1px #2D3E40, -1px 2px 1px #2D3E40, -2px 3px 1px #2D3E40, -3px 4px 1px #2D3E40;
+}
+
+.LoginContainer p {
+  color: red;
+  font-weight: bold;
+}
+
+.LoginContainer Button {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 40%;
+  transition: all 300ms;
+}
+
+.LoginContainer Button:hover {
+  width: 60%;
+  color: #93BFB7;
+  background-color: #387373;
+}
+
+@media (max-width: 900px) {
+  .LoginContainer form {
+    width: 60%;
+  }
+}

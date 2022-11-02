@@ -1,0 +1,85 @@
+.ContactText {
+  color: #2D3E40;
+  font-weight: 600;
+  margin: 20px 30px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  margin: 0 auto;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#alert {
+  display: none;
+  background-color: #93BFB7;
+  font-weight: 600;
+  color: #49A853;
+}
+
+.container__contact {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+}
+
+.container__contact__section:last-child {
+  padding: 30px;
+  grid-column: 1 / 3;
+}
+
+.ContactTextField {
+  width: 90%;
+}
+
+.ContactTextField p {
+  color: red;
+  font-weight: bold;
+}
+
+.container__contact__section Button {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  transition: all 300ms;
+}
+
+.container__contact__section Button:hover {
+  width: 200px;
+  color: #93BFB7;
+  background-color: #387373;
+}
+
+@media (max-width: 900px) {
+  .container__contact {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container__contact {
+    grid-template-columns: 1fr;
+  }
+
+  .container__contact__section:last-child {
+    grid-column: 1 / 2;
+    padding: 30px 0;
+  }
+}

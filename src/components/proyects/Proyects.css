@@ -1,0 +1,65 @@
+.container__proyects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 70%;
+  gap: 30px;
+  padding: 25px 30px;
+  justify-content: center;
+}
+
+.Card {
+  background-color: #93BFB7 !important;
+  width: 282px;
+  margin: 0 auto;
+  min-height: 270px;
+  box-shadow: 0px 0px 10px -1px rgba(45, 62, 64, 1) !important;
+  border-radius: 5px !important;
+  transition: all 500ms !important;
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+
+.CardTitle {
+  color: #2D3E40;
+  font-weight: 600;
+  font-size: 1.4em !important;
+}
+
+.CardButton a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #2D3E40;
+  transition: all 300ms;
+  padding: 10px;
+}
+
+.CardButton a:hover {
+  color: #93BFB7;
+  background-color: #2D3E40;
+  border-radius: 5px;
+}
+
+@media (max-width: 980px) {
+  .container__proyects {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .container__proyects {
+    grid-template-columns: 1fr;
+  }
+
+  .Card {
+    width: 90%;
+    margin-bottom: 17px;
+  }
+}

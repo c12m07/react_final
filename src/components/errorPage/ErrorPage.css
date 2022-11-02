@@ -1,0 +1,11 @@
+.ErrorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ErrorContainer h1 {
+  color: #387373;
+}
